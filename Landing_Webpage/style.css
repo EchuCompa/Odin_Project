@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+  
+  button.sign {
+    background: royalblue;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid royalblue;
+    color: white;
+    width: 90px;
+  }
+
+
+.upper {
+    background-color: #FDE74C;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro{
+    display: flex;
+    margin-top: 40px;
+    gap: 80px;
+    align-self: center;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-text {
+    font-size:x-large;
+    font-weight: 600;
+    
+}
+
+.right-links {
+    margin-right: 30px;
+}
+
+
+.quoute {
+    padding: 40px;
+    background-color: #C3423F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-quote {
+    font-size: x-large;
+}
+
+.reference-quote {
+    align-self:flex-end;
+    margin-right: 270px;
+    font-weight: 700;
+}
+
+
+.imgAnime {
+    border: 6px solid #C3423F;
+    border-radius: 40px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+
+}
+
+.recomendation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.killme {
+    display: flex;
+    justify-content: center;
+}
+
+.marketing {
+    background-color: royalblue ;
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap:80px;
+}
+
+.copyright {
+    background-color: #211A1E;
+    color: white;
+    padding: 20px;
+}
+
+.market-button {
+    border-radius: 30px;
+    border: 2px solid aliceblue;
+    background: royalblue;
+    color: white;
+}
+
+.centering {
+    align-self: center;
+}
