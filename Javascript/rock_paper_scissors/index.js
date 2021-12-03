@@ -25,25 +25,35 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game(rounds) {
-    let user = "";
+function game(user) {
     let computer = "";
-    let result = "";
-    let valid_input = ["rock", "paper", "scissors"];
-
-    for (let index = 0; index < rounds; index++) {
-        user = prompt("Enter \"Rock\", \"Paper\" or \"Scissors\"." ).toLowerCase();
-        while (! valid_input.includes(user) ) {
-            alert("Enter a valid input man, c`mon")
-            user = prompt("Enter \"Rock\", \"Paper\" or \"Scissors\"." ).toLowerCase();
-        }
-        computer = computerPlay();
-        result = playRound(user, computer);
-        alert("The result of the match is: " + result);
+    computer = computerPlay();
+    let res= playRound(user, computer);
+    const result = "The result of the match is: " + res;
+    if (res === "Player wins") {
+        player_wins++;
     }
-
+    else if (res === "Computer wins") {
+        computer_wins++;
+    }
+    return result;
 }
 
-let number_of_games=5;
-game(number_of_games);
+let computer_wins = 0;
+let player_wins = 0;
+const options = ["rock", "paper", "scissors"]
+
+for (const opt of options) {
+    const new_button = document.querySelector(`#${opt}`);
+    console.log(new_button);
+    new_button.addEventListener("click", () => {
+        console.log(opt);
+        const res = document.querySelector("#res");
+        const history = ` || Computer wins: ${computer_wins}, Player wins: ${player_wins}`
+        res.textContent = game(opt) + history ;
+    })
+}
+
+//let number_of_games=5;
+//game(number_of_games);
 
