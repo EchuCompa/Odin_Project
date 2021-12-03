@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    width: 600px;
+    height: 600px;
+    border: black solid 3px;
+}
+
+.grid-item {
+    
+}
