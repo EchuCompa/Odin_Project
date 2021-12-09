@@ -17,8 +17,14 @@ random_but.addEventListener("click", () => mode = "random");
 const input_size = document.querySelector("#size")
 input_size.addEventListener("input", (e) => {
     grid_size = e.target.value;
+    size_display.textContent = `${e.target.value} x ${e.target.value}`;
     resizeGrid();
 })
+
+const size_display = document.querySelector("#size_value")
+
+
+
 
 function createGrid() {
     canvas.innerHTML= "";
