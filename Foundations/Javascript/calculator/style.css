@@ -53,7 +53,7 @@ body {
 }
 
 .key {
-    border: black solid 3px ;
+    border: none;
     border-radius: 3px;
     background-color: cornsilk;
     font-weight: 400;
