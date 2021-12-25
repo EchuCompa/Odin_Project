@@ -1,0 +1,49 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    width: 500px;
+    height: 500px;
+}
+
+h3 {
+    font-size: xx-large;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#play {
+    color: azure;
+    background: black;
+    border-radius: 10px;
+    font-size: xx-large;
+    padding: 30px;
+    width: 300px;
+    border: none;
+}
+
+#restart {
+    position: absolute;
+    margin-top: 360px;
+    transform: scale(0);
+}
+
+#restart.active {
+    transform: scale(1);
+}
+
+.position {
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    font-size: xxx-large;
+    font-weight: 700;
+    color: azure;
+    
+}
