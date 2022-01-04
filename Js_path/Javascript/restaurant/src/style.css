@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+body {
+    background-color: #88454A;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Open Sans";
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7C3238;
+}
+
+#links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    font-size: 2rem;
+    font-family: "Opens Sans";
+    font-weight: 400;
+    color: rgb(228, 72, 103);
+}
+
+#content {
+    background-image: url("img/meat_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(124, 50, 56, 0.8);
+    padding: 30px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 70%;
+}
+
+.title {
+    color: #EDCBB1;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    gap: 20px;
+}
+
+.item img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Open Sans";
+}
+
+.product h4  {
+    color: #002500;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    margin-bottom: 0;
+}
+
+.product span {
+    border-top: dotted black 3px;
+    color: #929982;
+    font-weight: 400;
+    text-align: center;
+}

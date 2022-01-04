@@ -46,16 +46,19 @@ const gameBoard = (() => {
 
   const playTurn = (e) => {
     let posi = e.target.dataset.position-1;
-    if ( board[Math.floor(posi/3)][posi%3] === " " ) { //If the position wasn`t taken
-      board[Math.floor(posi/3)][posi%3] = player1.turn ? player1.mark : player2.mark;
-      player1.turn = !player1.turn;
-      player2.turn = !player2.turn;
-      displayController.updateWebBoard(board); 
-      turns++;
-    }
-    const res = actualResult();
-    if (res) {
-      displayController.end_game(res);
+    const res1 = actualResult();
+    if (!res1) {
+      if ( board[Math.floor(posi/3)][posi%3] === " " ) { //If the position wasn`t taken
+        board[Math.floor(posi/3)][posi%3] = player1.turn ? player1.mark : player2.mark;
+        player1.turn = !player1.turn;
+        player2.turn = !player2.turn;
+        displayController.updateWebBoard(board); 
+        turns++;
+      }
+      const res = actualResult();
+      if (res) {
+        displayController.end_game(res);
+      }
     }
   }
 
